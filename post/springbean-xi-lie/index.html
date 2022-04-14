@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Java面试问答——多线程 | 学无止境的博客</title>
+<title>SpringBean系列 | 学无止境的博客</title>
 
 <link rel="shortcut icon" href="https://blog.funimg.top/favicon.ico?v=1649904419045">
 
@@ -89,46 +89,20 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    Java面试问答——多线程
+                    SpringBean系列
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2021-05-25 ·
+                        · 2022-04-14 ·
                     </time>
                     
-                        <a href="https://blog.funimg.top/tag/BjAHGTMFA/" class="post-tags">
-                            # Thread
+                        <a href="https://blog.funimg.top/tag/Spring/" class="post-tags">
+                            # Spring
                         </a>
                     
                 </div>
                 <div class="post-content">
-                    <h2 id="什么是线程">什么是线程？</h2>
-<p>线程是操作系统能够进行运算调度的最小单位，它被包含在进程之中，是进程中的实际运作单位，可以使用多线程对进行运算提速。</p>
-<h2 id="创建线程池有几种方式">创建线程池有几种方式？</h2>
-<ul>
-<li>继承Thread类</li>
-<li>实现Runnable接口，重写run（）方法</li>
-<li>实现Callable接口，覆写call（）方法，有返回值</li>
-<li>使用线程池创建</li>
-</ul>
-<h2 id="java自带的线程池有哪些">Java自带的线程池有哪些？</h2>
-<ul>
-<li>newCachedThreadPool，可缓存线程池</li>
-<li>newFixedThreadPool，创建一个指定工作线程数量的线程池</li>
-<li>newSingleThreadExecutor，单工作线程最大的特点是可保证顺序地执行各个任务</li>
-<li>newScheduleThreadPool，创建一个定长的线程池，支持定时及周期性任务执行。</li>
-</ul>
-<h2 id="说说线程池的拒绝策略">说说线程池的拒绝策略</h2>
-<ul>
-<li>AbortPolicy策略：该策略会直接抛出异常，阻止系统正常工作。</li>
-<li>CallerRunsPolicy 策略：只要线程池未关闭，该策略直接在调用者线程中，运行当前的被丢弃的任务。</li>
-<li>DiscardOleddestPolicy策略： 该策略将丢弃最老的一个请求，也就是即将被执行的任务，并尝试再次提交当前任务。</li>
-<li>DiscardPolicy策略：该策略默默的丢弃无法处理的任务，不予任何处理。</li>
-</ul>
-<p>除了JDK默认为什么提供的四种拒绝策略，我们可以根据自己的业务需求去自定义拒绝策略，自定义的方式很简单，直接实现RejectedExecutionHandler接口即可。</p>
-<blockquote>
-<p>比如Spring integration中就有一个自定义的拒绝策略CallerBlocksPolicy，将任务插入到队列中，直到队列中有空闲并插入成功的时候，否则将根据最大等待时间一直阻塞，直到超时。</p>
-</blockquote>
+                    <p>生命周期</p>
 
                 </div>
             </article>
@@ -137,8 +111,8 @@
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://blog.funimg.top/post/zhu-da-jia-520-jie-ri-kuai-le/" class="post-title gt-a-link">
-                    祝大家520节日快乐
+                <a href="https://blog.funimg.top/post/zhong-qiu-jie-kuai-le/" class="post-title gt-a-link">
+                    中秋节快乐
                 </a>
             </div>
         
